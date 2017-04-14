@@ -1,0 +1,20 @@
+@import "../../styles/base/_all";
+
+ce-episode-master-detail {
+    display:block;
+	@extend .view-card;
+
+    ce-episode-edit-embed,
+    ce-episode-list-embed {
+        float:left;
+        display:inline-block;
+        position:relative;
+        width:50%;
+    }
+}
+
+ce-episode-master-detail::after {
+    clear:both;
+    display:block;
+    content:" ";
+}

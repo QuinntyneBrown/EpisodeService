@@ -1,0 +1,20 @@
+@import "../../styles/base/_all";
+
+ce-tv-show-master-detail {
+    display:block;
+	@extend .view-card;
+
+    ce-tv-show-edit-embed,
+    ce-tv-show-list-embed {
+        float:left;
+        display:inline-block;
+        position:relative;
+        width:50%;
+    }
+}
+
+ce-tv-show-master-detail::after {
+    clear:both;
+    display:block;
+    content:" ";
+}
